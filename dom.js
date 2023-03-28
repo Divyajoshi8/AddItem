@@ -28,3 +28,8 @@ for(i=0;i<items.length;i++)
 items[i].style.fontWeight='bold'
 }
 items[2].style.backgroundColor='green'
+var input=document.querySelector('input');
+input.value='Write your text here';
+var itm=document.getElementsByClassName('list-group-items');
+itm[0].textContent='hi';
+console.log(itm);
