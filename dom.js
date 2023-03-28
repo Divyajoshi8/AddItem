@@ -27,9 +27,18 @@ for(i=0;i<items.length;i++)
 {
 items[i].style.fontWeight='bold'
 }
-items[2].style.backgroundColor='green'
+items[1].style.color='green'
+items[2].style.visibility='hidden'
 var input=document.querySelector('input');
 input.value='Write your text here';
 var itm=document.getElementsByClassName('list-group-items');
 itm[0].textContent='hi';
 console.log(itm);
+var odd=document.querySelectorAll('li:nth-child(odd)');
+var even=document.querySelectorAll('li:nth-child(even)');
+for(var i=0;i<odd.length;i++)
+{
+    odd[i].style.backgroundColor='green'
+    even[i].style.backgroundColor='#ccc'
+}
+
