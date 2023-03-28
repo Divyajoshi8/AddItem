@@ -16,6 +16,15 @@ headertitle.style.tableLayout='green'
 var header =document.getElementById('main-header')
 header.style.borderBottom='solid 3px #000';
 var t =document.querySelector('.list-group-item')
-t.style.color='green'
+//t.style.color='green'
 var x =document.getElementById('title')
 x.style.color='green'
+var items=document.getElementsByClassName('list-group-item');
+console.log(items);
+console.log(items[2].outerHTML);
+items[2].textContent='Hello 2'
+for(i=0;i<items.length;i++)
+{
+items[i].style.fontWeight='bold'
+}
+items[2].style.backgroundColor='green'
