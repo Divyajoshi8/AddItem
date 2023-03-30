@@ -5,7 +5,7 @@ console.log(document.URL)
 document.title= 123
 console.log(document.head)
 console.log(document.doctype)
-//console.log(document.all)
+console.log(document.all)
 console.log(document.forms)
 console.log(document.images)
 console.log(document.getElementById('header-title'))
